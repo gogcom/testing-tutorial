@@ -1,0 +1,20 @@
+{
+    "name": "acid/testing-tutorial",
+    "require": {
+        "behat/behat": "^3.0",
+        "behat/mink": "^1.7",
+        "behat/mink-extension": "^2.2",
+        "behat/mink-goutte-driver": "^1.2",
+        "behat/mink-selenium2-driver": "^1.3",
+        "peridot-php/webdriver-manager": "^1.3"
+    },
+    "authors": [
+        {
+            "name": "Piotr Kacała",
+            "email": "pkacala@gog.com"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    }
+}

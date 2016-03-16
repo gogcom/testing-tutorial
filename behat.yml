@@ -1,0 +1,8 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: https://www.gog.com
+            sessions:
+                default:
+                    selenium2:
+                        wd_host: http://localhost:4444/wd/hub
