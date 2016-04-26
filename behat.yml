@@ -1,8 +1,30 @@
 default:
+    suites:
+        domain:
+            contexts:
+                - tests\Behat\DomainContext
+            filters:
+                tags: @domain
+
+        ui:
+            contexts:
+                - tests\Behat\UiContext
+            filters:
+                tags: @ui
+
+        api:
+            contexts:
+                - tests\Behat\ApiContext
+            filters:
+                tags: @api
+
     extensions:
         Behat\MinkExtension:
             base_url: https://www.gog.com
             sessions:
-                default:
+                ui:
                     selenium2:
+                        browser: chrome
                         wd_host: http://localhost:4444/wd/hub
+                api:
+                    goutte: ~
